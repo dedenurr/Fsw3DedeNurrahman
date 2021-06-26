@@ -15,52 +15,55 @@
 </head>
 
 <body>
-    <!-- Awal Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
 
-            <a class="navbar-brand" href="#">LOGO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">WORK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#newsLetter">CONTACT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT US</a>
-                    </li>
-
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#signup">SIGN UP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#login">LOGIN</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Akhir Navbar -->
 
     <!-- Section Jumbotron -->
     <section class="jumbotron text-center">
-        <h1>PLAY TRADITIONAL GAME</h1>
-        <h3>EXPERIENCE NEW TRADITIONAL GAME PLAY.</h3>
+        <!-- Awal Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-fsw fixed-top">
+            <div class="container">
 
-        <a class="btn btn-warning btn-lg" href="#about" role="button">PLAY NOW</a>
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">WORK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#newsLetter">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT US</a>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" href="#exampleModal2">SIGN UP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" href="#exampleModal">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Akhir Navbar -->
+
+        <div>
+            <h1>PLAY TRADITIONAL GAME</h1>
+            <h3>EXPERIENCE NEW TRADITIONAL GAME PLAY.</h3>
+
+            <a class="btn btn-warning btn-lg" href="#about" role="button">PLAY NOW</a>
+        </div>
 
         <div class="next">
             <a href="#about">
@@ -71,6 +74,65 @@
     </section>
     <!-- End Jumbotron -->
 
+
+    <!-- Pop up Login -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Form Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="UserName" class="col-form-label" style="color: black;">User Name:</label>
+                            <input type="email" class="form-control" id="UserName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="col-form-label" style="color: black;">Password:</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-warning">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Pop Up login -->
+    <!-- Pop Up Sign Up -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Form Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="CreateUserName" class="col-form-label" style="color: black;">Buat Akun Dengan
+                                Email:</label>
+                            <input type="email" class="form-control" id="CreateUserName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="createPassword" class="col-form-label" style="color: black;">Buat
+                                Password:</label>
+                            <input type="password" class="form-control" id="createPassword">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-warning">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Pop Up Sign Up -->
     <!-- Section About -->
     <section id="about">
         <div class="container">
